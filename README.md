@@ -2,7 +2,7 @@
 
 Is a minimal responsive Lightbox for HTML contents.
 
-** Howto **
+## Howto
 
 Setting up your HTML
 
