@@ -1,4 +1,4 @@
-# dwLightbox
+# Simple Lightbox
 
 Is a minimal responsive Lightbox for HTML contents.
 
@@ -8,12 +8,12 @@ Setting up your HTML
 
 ```
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="jquery.dwLightbox.min.js"></script>
+<script src="jquery.simplelightbox.min.js"></script>
 ```
 
 To show the Lightbox ([optional])
 ```
-$.dwLightbox('open', 'Put your content here!', [options]);
+$.simplelighbox('open', 'Put your content here!', [options]);
 ```
 
 Options can be
@@ -32,5 +32,7 @@ Options can be
     overflow:               'auto',                     // css overflow attribute of content box
     speed:                  '421',                      // animation speed (fade-in / fade-out)
     closeButton:            'X'                         // here can be set an image or other chars
+    popupPosition	    'center'			// position of the lightbox (center, top, bottom)
+    textAlign		    'left'			// text alignment
 }
 ```
