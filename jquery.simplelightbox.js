@@ -3,7 +3,7 @@
     if (!$) {
         return;
     }
-    $.dwLightbox = function(action, content, options) {
+    $.simplelightbox = function(action, content, options) {
         var settings = $.extend({
                 backgroundColor:        '#ffffff',
                 foregroundColor:        '#000000',
@@ -39,7 +39,7 @@
             close = settings.closeButton,
             
             // Helper
-            namespace = 'dwlightbox',
+            namespace = 'simplelightbox',
         
             // HTML
             $wrap   = $('<div class="' + namespace + '-wrap" />'),
