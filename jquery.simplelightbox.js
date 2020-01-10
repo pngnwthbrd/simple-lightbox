@@ -17,7 +17,9 @@
                 height:                 'auto',
                 overflow:               'auto',
                 speed:                  '421',
-                closeButton:            'X'
+                closeButton:            '&times;',
+                popupPosition:          'center',
+                textAlign:              'left'
             }, options);
             
             
@@ -66,7 +68,7 @@
                     'display':          'inline-block',
                     'color':            fgColor,
                     'margin':           '0 auto',
-                    'text-align':       'center',
+                    'text-align':       textAlign,
                     'min-width':        minWidth,
                     'min-height':       minHeight,
                     'max-height':       maxHeight,
@@ -74,10 +76,34 @@
                     'width':            width,
                     'height':           height,
                     'overflow':         overflow,
-                    'top':              '50%',
-                    'transform':        'translateY(-50%)',
                     'border':           '1px solid ' + rColor
                 });
+                
+                switch (settings.popupPosition)
+                    {
+                    case 'center':
+                        $box.css({
+                            'top':              '50%',
+                            'transform':        'translateY(-50%)'
+                        });
+                        
+                        break;
+                        
+                    case 'top':
+                        $box.css({
+                            'top':              '0%',
+                        });
+                        
+                        break;
+                        
+                    case 'bottom':
+                        $box.css({
+                            'top':              '100%',
+                            'transform':        'translateY(-100%)'
+                        });
+                        
+                        break;
+                    }
                 
                 $content.css({
                     'padding':          '25px'
@@ -91,7 +117,7 @@
                     'text-align':       'right',
                     'font-size':        '2em',
                     'font-weight':      'bold',
-                    'color':            '#9c0700',
+                    'color':            '#000000',
                     'padding':          '15px',
                     'display':          'block',
                     'z-index':          '99999199',
