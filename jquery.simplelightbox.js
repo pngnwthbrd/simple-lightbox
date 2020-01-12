@@ -8,7 +8,7 @@
                 backgroundColor:        '#ffffff',
                 foregroundColor:        '#000000',
                 borderColor:            '#c0c0c0',
-                overlayColor:           'rgba(190, 0, 0, 0.4)',
+                overlayColor:           'rgba(0, 0, 0, 0.4)',
                 maxWidth:               '100%',
                 maxHeight:              '100%',
                 minWidth:               '50%',
@@ -37,6 +37,7 @@
             overflow = settings.overflow,
             speed = settings.speed,
             close = settings.closeButton,
+            textAlign = settings.textAlign,
             
             // Helper
             namespace = 'simplelightbox',
