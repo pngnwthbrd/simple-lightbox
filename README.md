@@ -1,6 +1,7 @@
 # Simple Lightbox
 
-Is a minimal responsive Lightbox for HTML contents.
+Is a minimal responsive Lightbox for HTML contents.  
+DEMO: [Simplelightbox Demo site](http://pngnwthbrd.com/dev/simplelightbox)
 
 ## Howto
 
