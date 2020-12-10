@@ -1,3 +1,9 @@
+/**
+ * jQuery simple lightbox
+ * https://github.com/pngnwthbrd/simple-lightbox
+ * @pngnwthbrd https://pngnwthbrd.com
+ */
+
 (function($, window, document) {
     'use strict';
     if (!$) {
