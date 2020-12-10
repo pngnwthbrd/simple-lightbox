@@ -76,8 +76,7 @@
                     'max-width':        maxWidth,
                     'width':            width,
                     'height':           height,
-                    'overflow':         overflow,
-                    'border':           '1px solid ' + rColor
+                    'overflow':         overflow
                 });
                 
                 switch (settings.popupPosition)
@@ -116,13 +115,13 @@
                     'right':            '0',
                     'cursor':           'pointer',
                     'text-align':       'right',
-                    'font-size':        '2em',
+                    'font-size':        '18px',
                     'font-weight':      'bold',
-                    'color':            '#000000',
-                    'padding':          '15px',
+                    'color':            '#fff',
+                    'padding':          '5px 7px',
                     'display':          'block',
                     'z-index':          '99999199',
-                    'background':       bgColor
+                    'background':       '#000'
                 });
                 
                 // prepare HTML
