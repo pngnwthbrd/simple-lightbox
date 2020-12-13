@@ -14,7 +14,7 @@
                 backgroundColor:        '#ffffff',
                 foregroundColor:        '#000000',
                 borderColor:            '#c0c0c0',
-                overlayColor:           'rgba(0, 0, 0, 0.4)',
+                overlayColor:           'rgba(0, 0, 0, 0.7)',
                 maxWidth:               '100%',
                 maxHeight:              '100%',
                 minWidth:               '50%',
@@ -121,22 +121,22 @@
                     'right':            '0',
                     'cursor':           'pointer',
                     'text-align':       'right',
-                    'font-size':        '18px',
+                    'font-size':        '42px',
                     'font-weight':      'bold',
                     'color':            '#fff',
-                    'padding':          '5px 7px',
+                    'padding':          '10px 17px',
                     'display':          'block',
                     'z-index':          '99999199',
-                    'background':       '#000'
+                    'background':       'none'
                 });
                 
                 // prepare HTML
                 $content.html(content);
                 $close.html(close);
-                $box.append($close, $content);
+                $box.append($content);
                 
                 // put together
-                $wrap.append($box);
+                $wrap.append($close, $box);
                 $('body').append($wrap);
                 $wrap.fadeIn(speed);
             },
